@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&family=Ubuntu:wght@300&display=swap');
+/* font-family: 'Ubuntu', sans-serif; */
+
+* {
+    font-family: 'Tilt Neon', sans-serif;
+    transition: 1s ease-in-out;
+    margin: 0px;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(50, 48, 59);
+    color: white;
+}
+
+.storie {
+    padding: 20px;
+    font-size: 2.1em;
+    padding-left: 100px;
+    padding-right: 100px;
+    position: relative;
+    margin-top: -160px;
+    z-index: 4;
+    border-radius: 10px;
+    background-color: transparent !important;
+    background: linear-gradient(180deg, transparent, black, black, black, black, black 40%, black 98%);
+    padding-top: 40px;
+}
+
+.banner img {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    /* object-fit: cover; */
+    margin: 0px;
+    left: 0px;
+    top: 0px;
+}
+
+.banner {
+    left: 0px;
+    right: 0px;
+    margin: 0px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 150vh;
+}
+
+.banner img:nth-child(3) {
+    z-index: 3;
+    top: -40%;
+    height: 250vh;
+}
+
+.banner img:nth-child(2) {
+    object-fit: cover;
+    height: 140%;
+}
+
+.headline {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    z-index: 2;
+    font-weight: 900;
+    width: 100%;
+    height: 160vh;
+    background-color: rgba(0, 0, 0, 0.726);
+    text-align: center;
+    color: white;
+}
+
+.headline h1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    font-weight: 900;
+    width: 100%;
+    font-size: 80px;
+    text-align: center;
+    color: white;
+}
+
+.headline span {
+    color: transparent;
+    background: linear-gradient(50deg, rgb(0, 255, 42), rgb(0, 60, 255));
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+@media screen and (max-width:500px) {
+
+    h2 {
+        font-size: 20px;
+        margin: 10px;
+        color: white;
+        margin-bottom: 25px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .headline h1 {
+        font-size: 30px;
+        margin: 10px;
+        color: white;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .storie {
+        font-size: 15px;
+        color: gray;
+        font-family: cursive;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+.torch {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: radial-gradient(circle at center, transparent,rgba(0, 0, 0, 0.822) 150px,  black,black);
+    z-index: 6;
+}
